@@ -14,7 +14,7 @@ on:
 jobs:
   pushMultiArch:
     name: "pterodactyl-yolks:installers_multiarch:${{ matrix.tag }}"
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     strategy:
       fail-fast: false
       matrix:
@@ -45,7 +45,7 @@ jobs:
 
   pushAmd:
     name: "pterodactyl-yolks:installers_amd:${{ matrix.tag }}"
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     strategy:
       fail-fast: false
       matrix:
