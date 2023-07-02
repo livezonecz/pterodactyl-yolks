@@ -29,7 +29,7 @@ LABEL       org.opencontainers.image.licenses=MIT
 
 RUN         apk add --update --no-cache ca-certificates curl git jq wget
 
-# TIMEZONE
+# SET TIMEZONE TO PRAGUE
 RUN apk add -U tzdata
 ENV TZ=Europe/Prague
 RUN cp /usr/share/zoneinfo/Europe/Prague /etc/localtime
